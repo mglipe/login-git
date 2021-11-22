@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/public/styleLogin.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container-grid">
+        <div class="container-logo">
+            <img src="/public/imagem/home-bg-img.svg" alt="logo">
+        </div>
+        <div class="container-form">
+            <section class="section-datas">
+                <form action="" method="post">
+                    <label for="name">UserName</label><br><br>
+                    <input type="text" name="name" id="name"><br><br>
+
+                    <label for="pass">Password</label><br><br>
+                    <input type="password" name="pass" id="pass"><br><br>
+
+                    <p>Don't have an account?<a href="/pages/createAccount"> To create!</a></p>
+
+                    <button type="submit">Sign in</button>
+                </form>
+            </section>
+        </div>
+    </div>    
+</body>
+
+<script>
+
+    async function authenticate(){
+        try{
+            const response = await fetch('http://localhost:8080')
+            const data = await response.text()
+            console.log(data)
+        }catch(err){
+            console.log(err)
+        }
+    }
+
+    authenticate()
+
+</script>
+</html>
