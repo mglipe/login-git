@@ -1,0 +1,73 @@
+body{
+    background: aliceblue;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.container-logo img{
+    height: 80%;
+    width: 80%;
+
+    margin-top: 5em;
+    margin-left: 2em;
+}
+
+.section-datas{
+    background: rgba(12, 135, 218, 0.904);
+
+    margin: 5em 10em 0 10em;
+    padding: 2em 2em 8em 2em;
+    text-align: center;
+
+    border-radius: 1.5em;
+}
+
+.section-datas form{
+    margin-top: 3em;
+}
+
+.section-datas form label{
+    font-family:sans-serif
+}
+
+
+.section-datas form input{
+    background: aliceblue;
+    border: aliceblue;
+    border-radius: .3em;
+
+    padding-bottom: .5em;
+}
+
+.section-datas form p a{
+    text-decoration: none;
+    color: aliceblue
+}
+
+.section-datas form p a:hover{
+    color: rgba(240, 248, 255, 0.849);
+    transition: .5s;
+}
+
+
+.section-datas form button{
+    background: rgba(175, 17, 175, 0.781);
+    color:aliceblue;
+
+    position: relative;
+    margin-left: 20em;
+
+    border-radius: .3em;
+    border: none;
+    padding: .5em .5em .5em .5em;
+
+    cursor: pointer;
+}
+
+.section-datas form button:hover{
+    transition: .5s;
+    background: rgba(161, 16, 161, 0.781);
+}

@@ -1,0 +1,56 @@
+body{
+    background: aliceblue;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns:  65% 35%;
+}
+
+
+.container-form{
+    background: rgba(12, 135, 218, 0.904);
+
+    margin-top: 3em;
+    margin-left: 17em;
+    padding-bottom: 4em;
+
+    border-radius: .3em;
+}
+
+.container-form form{
+    text-align: center;
+
+    margin-top: 2em;
+}
+
+.container-form form label{
+    font-family: sans-serif;
+
+    line-height: 3em;
+}
+
+
+.container-form form input{
+    margin-top: .5em;
+
+    border: none;
+    border-radius: .3em;
+}
+
+
+.container-form form button{
+    background: rgba(175, 17, 175, 0.781);
+    color: aliceblue;
+
+    position: relative;
+    margin-top: 2em;
+    margin-left: 20em;
+
+    border-radius: .3em;
+    border: none;
+    padding: .5em .5em .5em .5em;
+
+    cursor: pointer;
+}
+
