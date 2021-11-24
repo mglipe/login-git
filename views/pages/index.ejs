@@ -31,18 +31,5 @@
 </body>
 
 <script>
-
-    async function authenticate(){
-        try{
-            const response = await fetch('http://localhost:8080')
-            const data = await response.text()
-            console.log(data)
-        }catch(err){
-            console.log(err)
-        }
-    }
-
-    authenticate()
-
 </script>
 </html>

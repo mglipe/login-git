@@ -20,7 +20,7 @@ routes.post("/", async(req, res)=>{
     const user = await User.findOne({where: {username: username, password: password}})
     if(user === null){
         console.log('not found!')
-        return res.json({username: 'username/password does not exist or wrong'})
+        return res.json({msg: 'username/password does not exist or wrong'})
     }else{
         console.log(user instanceof User)
         console.log(user.username)
